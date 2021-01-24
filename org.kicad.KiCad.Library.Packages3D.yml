@@ -1,5 +1,5 @@
 id: org.kicad.KiCad.Library.Packages3D
-branch: '5.1'
+branch: stable
 runtime: org.kicad.KiCad
 runtime-version: stable
 sdk: org.freedesktop.Sdk//20.08
