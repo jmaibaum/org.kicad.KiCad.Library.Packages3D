@@ -20,6 +20,6 @@ modules:
   sources:
   - type: archive
     url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.0-rc1/kicad-packages3d-6.0.0-rc1.tar.gz
-    sha256: 0c1a4fd4b08282263ec37a117163b073bd4b1f4c632bbcfbd1e347cd3d76da81
+    sha256: 858773c165fc1592c546f32f906848e0194076bc04e55244be028dda5fedbbcd
   - type: file
     path: org.kicad.KiCad.Library.Packages3D.metainfo.xml
