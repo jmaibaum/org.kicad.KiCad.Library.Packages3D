@@ -1,7 +1,7 @@
 id: org.kicad.KiCad.Library.Packages3D
-branch: stable
+branch: beta
 runtime: org.kicad.KiCad
-runtime-version: stable
+runtime-version: beta
 sdk: org.freedesktop.Sdk//21.08
 build-extension: true
 separate-locales: false
@@ -11,13 +11,15 @@ build-options:
 modules:
 - name: kicad-packages3D
   buildsystem: cmake-ninja
+  config-opts:
+  - -DKICAD_DATA=/app/extensions/Library/Packages3D
   post-install:
   - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.kicad.KiCad.Library.Packages3D.metainfo.xml
   - appstream-compose --basename=org.kicad.KiCad.Library.Packages3D --prefix=${FLATPAK_DEST}
     --origin=flatpak org.kicad.KiCad.Library.Packages3D
   sources:
   - type: archive
-    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/5.1.12/kicad-packages3d-5.1.12.tar.gz
+    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.0-rc1/kicad-packages3d-6.0.0-rc1.tar.gz
     sha256: 0c1a4fd4b08282263ec37a117163b073bd4b1f4c632bbcfbd1e347cd3d76da81
   - type: file
     path: org.kicad.KiCad.Library.Packages3D.metainfo.xml
