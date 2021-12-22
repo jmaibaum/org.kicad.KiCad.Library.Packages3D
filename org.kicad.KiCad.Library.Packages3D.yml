@@ -1,7 +1,7 @@
 id: org.kicad.KiCad.Library.Packages3D
-branch: beta
+branch: stable
 runtime: org.kicad.KiCad
-runtime-version: beta
+runtime-version: stable
 sdk: org.freedesktop.Sdk//21.08
 build-extension: true
 separate-locales: false
@@ -19,7 +19,7 @@ modules:
     --origin=flatpak org.kicad.KiCad.Library.Packages3D
   sources:
   - type: archive
-    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.0-rc1/kicad-packages3d-6.0.0-rc1.tar.gz
-    sha256: 858773c165fc1592c546f32f906848e0194076bc04e55244be028dda5fedbbcd
+    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.0/kicad-packages3d-6.0.0.tar.gz
+    sha256: 4951de18320232e847dc06baf10fef2d9b51e7fd9178f6c4ef281cba46053d5a
   - type: file
     path: org.kicad.KiCad.Library.Packages3D.metainfo.xml
