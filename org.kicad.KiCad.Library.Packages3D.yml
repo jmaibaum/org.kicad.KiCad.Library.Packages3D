@@ -19,7 +19,7 @@ modules:
     --origin=flatpak org.kicad.KiCad.Library.Packages3D
   sources:
   - type: archive
-    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.7/kicad-packages3d-6.0.7.tar.gz
-    sha256: c9aae26de95789208586c721e330df0a444d4d8264bdb50a65d488eaac22b927
+    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.8/kicad-packages3d-6.0.8.tar.gz
+    sha256: d545077d7e678c0bc2981d776da595c92207b0edad146e6e19b471444b26e79f
   - type: file
     path: org.kicad.KiCad.Library.Packages3D.metainfo.xml
