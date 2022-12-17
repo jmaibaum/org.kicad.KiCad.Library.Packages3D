@@ -18,8 +18,12 @@ modules:
   - appstream-compose --basename=org.kicad.KiCad.Library.Packages3D --prefix=${FLATPAK_DEST}
     --origin=flatpak org.kicad.KiCad.Library.Packages3D
   sources:
-  - type: archive
-    url: https://gitlab.com/kicad/libraries/kicad-packages3d/-/archive/6.0.9/kicad-packages3d-6.0.9.tar.gz
-    sha256: a9cdab46825970119edbd9fdf373a66151b6a587af39065bc18dfcbd767af438
+  - type: git
+    url: https://gitlab.com/kicad/libraries/kicad-packages3d.git
+    commit: 45df600c5e3dd5113d62e6445115e7c37bdf362f
+    tag: 6.0.9
+    x-checker-data:
+      type: git
+      tag-pattern: ^([\d\.]+)$
   - type: file
     path: org.kicad.KiCad.Library.Packages3D.metainfo.xml
