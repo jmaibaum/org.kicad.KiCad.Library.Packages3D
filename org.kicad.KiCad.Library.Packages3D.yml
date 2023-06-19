@@ -20,8 +20,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/kicad/libraries/kicad-packages3d.git
-        commit: 678febe2213f8e187f9c3a40ec708d59e2b5cf89
-        tag: 7.0.0-rc2
+        commit: fbe7ce40b9937b20195822aafc9390742089f727
+        tag: 7.0.5
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+[-rc\d]+)$
