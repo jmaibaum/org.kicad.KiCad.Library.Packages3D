@@ -20,10 +20,12 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/kicad/libraries/kicad-packages3d.git
-        commit: f1af95360976e66472b13897a1f3f5c2a77c0461
-        tag: 7.0.10
+        commit: e8cbcb1e90d4962ac754faedae43632e3cd3abc9
+        tag: 7.0.11
         x-checker-data:
           type: git
           tag-pattern: ^([\d\.]+)$
+          versions:
+            <: 7.99.0
       - type: file
         path: org.kicad.KiCad.Library.Packages3D.metainfo.xml
