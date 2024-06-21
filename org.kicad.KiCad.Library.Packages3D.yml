@@ -15,8 +15,6 @@ modules:
       - -DKICAD_DATA=/app/extensions/Library/Packages3D
     post-install:
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.kicad.KiCad.Library.Packages3D.metainfo.xml
-      - appstream-compose --basename=org.kicad.KiCad.Library.Packages3D --prefix=${FLATPAK_DEST}
-        --origin=flatpak org.kicad.KiCad.Library.Packages3D
     sources:
       - type: git
         url: https://gitlab.com/kicad/libraries/kicad-packages3d.git
