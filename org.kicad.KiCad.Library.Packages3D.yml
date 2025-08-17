@@ -18,13 +18,14 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/kicad/libraries/kicad-packages3d.git
-        commit: e9d40e21c6cb631e64320efde0618481f7f55c19
-        tag: 9.0.3
+        commit: 8178218a2c9bc213fe04116eb1210c41ac846d64
+        tag: 9.0.4
         x-checker-data:
           type: json
           url: https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3d/repository/tags
-          tag-query: "[.[] | select(.name|test(\"^[\\\\d\\\\.]+$\"; \"\"))] | first | .name"
-          timestamp-query: "[.[] | select(.name|test(\"^[\\\\d\\\\.]+$\"; \"\"))] | first | .created_at"
+          tag-query: '[.[] | select(.name|test("^[\\d\\.]+$"; ""))] | first | .name'
+          timestamp-query: '[.[] | select(.name|test("^[\\d\\.]+$"; ""))] | first
+            | .created_at'
           is-main-source: true
           versions:
             <: 9.99.0
