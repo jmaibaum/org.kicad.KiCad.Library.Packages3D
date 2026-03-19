@@ -17,8 +17,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/kicad/libraries/kicad-packages3d.git
-        commit: 092bada8bf97522d73b82d7892d19ae658a9353c
-        tag: 9.0.7
+        commit: ca5b7874dad95c1c36b7ad8db6ca6b82e4a2a89e
+        tag: 10.0.0
         x-checker-data:
           type: json
           url: https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3d/repository/tags
